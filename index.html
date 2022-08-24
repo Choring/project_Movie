@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <title>MovieLife</title>
+</head>
+<body>
+    <header>
+        <div id="title"><img src="img/header/Logo.png" alt="Logo"></div>
+        <nav>
+            <ul>
+                <li><p>main</p></li>
+                <li><p>trailer</p></li>
+                <li><p>gallery</p></li>
+                <li><p>about</p></li>
+                <li><p>contact</p></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <section>
+        <div id="poster" class="swiper mySwiper">
+            <div class="posterHeader">
+                <p>현재 상영중인 영화</p>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/poster/1.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/2.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/3.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/4.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/5.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/6.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/7.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/8.jpg" alt="poster">
+            </div>
+              <div class="swiper-slide">
+                <img src="img/poster/9.jpg" alt="poster">
+            </div>
+            </div>
+        </div>
+        <div id="introduce">
+            <div class="content">
+                <div class="contentText">
+                    <h3>킹스맨 -퍼스트 클래스-</h3>
+                    <p>역사상 최악의 폭군들과 범죄자들이 모여 수
+                        백만 명의 생명을 위협할 전쟁을 모의하는 광
+                        기의 시대. 이들을 막으려는 한 사람과 그가 
+                        비밀리에 운영 중인 독립 정보기관, ‘킹스
+                        맨’의 최초 미션이 시작된다! 베일에 감춰졌
+                        던 킹스맨의 탄생을 목격하라!.
+                    </p>
+                    <div class="btn">
+                        <div class="playBtn"><p>PLAY</p></div>
+                        <div class="collectionBtn"><p>COLLECTION</p></div>
+                    </div>
+                </div>
+                <img src="./img/poster/16.jpg" alt="introducePoster">
+            </div>
+        </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //   },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 60,
+            },
+          },
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
